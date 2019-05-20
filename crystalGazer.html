@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>crystalGazer</title>
+</head>
+<body>
+
+	<script>
+		var childrenNo, partnerName, location, jobTitle;
+
+		function crystalGazer(childrenNo, partnerName, location, jobTitle) {
+			childrenNo = window.prompt('Enter children\'s number:', '');
+			partnerName = window.prompt('Enter your partner\'s name:', '');
+			location = window.prompt('Enter your geographic location:', 'Vienna');
+			jobTitle = window.prompt('What is your profession?:', '');
+			document.write('You will be a ' + jobTitle + ' in ' + location + ' and married to ' +
+							partnerName + ' with ' + childrenNo + ' children.');
+		}
+
+		crystalGazer(childrenNo, partnerName, location, jobTitle);
+
+	</script>
+
+</body>
+</html>
