@@ -12,3 +12,19 @@ function crystalGazer() {
 };
 
 crystalGazer()
+
+//______________________________________________________________________________________
+
+document.write("<br><br> Age Calculator<br><br>")
+
+function AgeCalculator(){
+	birthYear = 1989;
+	currentDate = new Date();
+	currentYear = currentDate.getFullYear();
+	age = currentYear-birthYear;
+	document.write("You are either " + (age-1) + " or " + (age) + " Years old.");
+}
+
+AgeCalculator()
+
+//_____________________________________________________________________________________
