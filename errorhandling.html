@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id='message'></p>
+
+   <script type="text/javascript">
+
+   	try {
+   		var person = prompts("Please enter your name", "Harry Potter");
+   		document.getElementById("message").innerHTML = "Hello " + person + "! How are you today?";
+   	} catch {
+   		document.getElementById("message").innerHTML = 'An error has occured. The <b>\"prompts\"</b> function has to be fixed.';
+   	}
+
+   </script>
+
+</body>
+</html>
