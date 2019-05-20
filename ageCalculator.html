@@ -6,13 +6,13 @@
 <body>
 
 	<script>
-		var birthYear, currentYear;
+		var birthYear, currentYear, today = new Date();
 
 		function ageCalculator(birthYear, currentYear) {
 			birthYear = window.prompt('Enter your birth year:', '');
-			currentYear = window.prompt('Enter the current year:', '');
-			possAge1 = currentYear - birthYear - 1;
-			possAge2 = currentYear - birthYear;
+			//currentYear = window.prompt('Enter the current year:', '');
+			possAge1 = today.getFullYear() - birthYear - 1;
+			possAge2 = today.getFullYear() - birthYear;
 			document.write('You are either <b>' + possAge1 + '</b> or <b>' + possAge2 +
 				'</b> years old.');
 		}
