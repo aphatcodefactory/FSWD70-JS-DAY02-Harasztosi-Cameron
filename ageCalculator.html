@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>age calculator</title>
+</head>
+<body>
+
+	<script>
+		var birthYear, currentYear;
+
+		function ageCalculator(birthYear, currentYear) {
+			birthYear = window.prompt('Enter your birth year:', '');
+			currentYear = window.prompt('Enter the current year:', '');
+			possAge1 = currentYear - birthYear - 1;
+			possAge2 = currentYear - birthYear;
+			document.write('You are either <b>' + possAge1 + '</b> or <b>' + possAge2 +
+				'</b> years old.');
+		}
+
+		ageCalculator(birthYear, currentYear);
+
+	</script>
+
+</body>
+</html>
