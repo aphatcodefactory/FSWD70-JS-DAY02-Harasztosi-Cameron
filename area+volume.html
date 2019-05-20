@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>area & volume calc</title>
+</head>
+<body>
+	<script>
+		var x, y, z;
+
+		function areaVolumeCalc() {
+			x = prompt('Enter width');
+			y = prompt('Enter length');
+			z = prompt('Enter height');
+			return document.write('The <b>area</b> of the box is <b>' + parseFloat(x) *
+				parseFloat(y) + ' cm<sup>2</sup></b> and ...<br> The <b>volume</b> of the box is <b>' + parseFloat(x) * parseFloat(y) * parseFloat(z) + ' cm<sup>3</sup></b>');
+		}
+
+		areaVolumeCalc();
+
+	</script>
+
+</body>
+</html>
